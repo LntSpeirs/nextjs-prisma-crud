@@ -12,7 +12,8 @@ async function loadTasks() {
   console.log(data);
   return data;
 } */
-
+/* export const revalidate = 60; */
+export const dynamic = "force-dynamic";
 const HomePage = async () => {
   const tareas = await loadTasks();
   return (
